@@ -1,0 +1,21 @@
+name: Deployment Workflow
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  job_one:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      uses: appleboy/ssh-action@master
+      with:
+        host: ec2-18-117-184-57.us-east-2.compute.amazonaws.com
+        username: ec2-user
+        key: ${{ secrets.SEO_SECRET }}
+        port: 22
+        script: |
+          cd ~
+          git pull origin main
+          git status
