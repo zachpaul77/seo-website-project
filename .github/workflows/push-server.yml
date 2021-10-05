@@ -18,4 +18,5 @@ jobs:
         script: |
           cd ~/seo-website-project
           git pull origin main
-          git status
+          rm -R /var/www/html/*
+          cp * /var/www/html/
