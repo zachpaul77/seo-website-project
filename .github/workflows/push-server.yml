@@ -19,4 +19,4 @@ jobs:
           cd ~/seo-website-project
           git pull origin main
           rm -R /var/www/html/*
-          cp * /var/www/html/
+          cp -r * /var/www/html/
