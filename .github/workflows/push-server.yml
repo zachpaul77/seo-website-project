@@ -16,7 +16,5 @@ jobs:
         key: ${{ secrets.SEO_SECRET }}
         port: 22
         script: |
-          cd ~/seo-website-project
+          cd /var/www/html/seo-website-project
           git pull origin main
-          rm -R /var/www/html/*
-          cp -r * /var/www/html/
