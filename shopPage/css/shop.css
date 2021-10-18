@@ -1,0 +1,91 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family: Helvetica, Arial, sans-serif;
+}
+/* Background color for navbar and dropdown menus */
+.navbar-custom, .navbar-custom .dropdown-menu {
+    background-color: #141414;
+}
+/* Text color for navbar and dropdown menus */
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text,
+.navbar-custom .navbar-nav .nav-link,
+.navbar-custom .dropdown-item {
+    color: #ecf0f1;
+	margin: 0px 20px;
+}
+/* Background and text colors for current page link and links on hover and focus */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .dropdown-item:hover, 
+.navbar-custom .dropdown-item:focus {
+    background-color: #346f7e;
+    color: #fff;
+}
+/* Border and text colors for menu icon on small screens */
+.custom-toggler.navbar-toggler {
+    color: #ffffff;
+}
+/* Hamburger icon - use same rgb values as previous rule for stroke */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(236,240,241, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+body {
+	margin-top: 57px;
+	background-color: white;
+}#banner {
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    padding-top: px;
+}
+.col-xl-4 .card.col-md-4 .card-img-top {
+    left: 0%;
+
+}
+body h1 {
+}
+#banner {
+}
+#subscription {
+    padding-left: px;
+
+}
+
+@media screen and (min-width:1080px){
+#banner {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+#cart {
+    margin-left: 40%;
+    text-align: center;
+}
+
+
+}
+#cart {
+    color: #3DA324;
+}
+#cart {
+    background-color: #000000;
+    padding-left: 0%;
+    color: #FFFFFF;
+}
+#cart {
+}
+.heroimg {
+    text-align: center;
+    background-color: #35283C;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+footer {
+	background-color: #f5f5f7;
+	text-align: center;
+}
