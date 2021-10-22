@@ -35,7 +35,7 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(236,240,241, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 body {
-	margin-top: 57px;
+	margin-top: 56.2px;
 	background-color: white;
 }
 .heroimg {
@@ -61,6 +61,38 @@ footer {
 	text-align: center;
 }
 
+
+.about-box {
+    position: relative;
+}
+
+.bg-image {
+    background-image: url(../images/corporate-handshake.jpeg);
+    background-size: cover;
+    background-position: center center;
+
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    filter: blur(10px)
+}
+
+.about-message {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.about-message p {
+    line-height: 1.3;
+    position: relative;
+}
+
 @media screen and (min-width:0px){
 	.heroimg {
 		padding-top: 1rem;
@@ -82,6 +114,18 @@ footer {
 		font-size: 90%;
 		padding: 10px 0px;
 	}
+    .about-message {
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: left;
+        width: 100%;
+        padding-top: 5em;
+        padding-bottom: 3em;
+    }
+    .about-message p {
+        max-width: 25.5em;
+        font-size: 21px;
+    }
 
 }
 
@@ -105,6 +149,16 @@ footer {
 		font-size: 110%;
 		padding: 10px 0px;
 	}
+    .about-message {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-left: 10px;
+        width: 80%;
+    }
+    .about-message p {
+        max-width: 25.5em;
+        font-size: 24px;
+    }
 
 }
 
@@ -124,6 +178,15 @@ footer {
 	#second img {
 		width:30rem;
 	}
+    .about-message {
+        padding-left: 35px;
+        text-align: left;
+        width: 1015px;
+    }
+    .about-message p {
+        max-width: 25.5em;
+        font-size: 28px;
+    }
 }
 
 @media screen and (min-width:1199px){
