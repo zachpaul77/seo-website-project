@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: air-membership-zc.html
+Disallow: shopPage\subscriptionPage\air-membership-skyvial.html
 Sitemap: http://www.skyvial.tech/sitemap.xml

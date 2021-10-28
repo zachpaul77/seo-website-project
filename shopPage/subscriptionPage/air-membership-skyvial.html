@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign up Page</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="css/membership-style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body style="padding-top: 70px">
+	  
+  	<!-- body code goes here -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-custom"> <a href="index.html"><img height=40 width=45 src="logo-white.svg"></img></a>
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">Menu </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+    <ul class="navbar-nav mx-auto">
+      <a class="navbar-brand" href="#">Sky Vials</a>
+      <li class="nav-item active"> <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="../../shopPage/shop.html">Shop</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="../../about-us.html">About Us</a> </li>
+    </ul>
+  </div>
+</nav>
+
+  <div class="contact-us" id="label">
+	<h1>Subscription Plan</h1>
+	<p>Choose from a selection of plans that suit your needs</p>
+  </div>
+	
+  <form>
+	  <div class="form-group">
+		  <label>First Name</label>
+		  <input id="fname" placeholder="Enter First Name"/>
+		  <div id="fnameerr" class="error-hint hidden" >First name is required</div>
+	  </div>
+	  <div class="form-group">
+		  <label>Last Name</label>
+		  <input id="lname" placeholder="Enter Last Name"/>
+		  <div id="lnameerr" class="error-hint hidden" >Last name is required</div>
+	  </div>
+	  <div class="form-group">
+		  <label>Phone Number</label>
+		  <input id="num" placeholder="Enter number"/>
+		  <div id="numerr" class="error-hint hidden" >Incorrect phone number format</div>
+	  </div>
+	  <div class="form-group">
+		  <label>Email</label>
+		  <input id="email" placeholder="Enter email"/>
+		  <div  class="error-hint hidden" >Email is required</div>
+		  <div id="emailerr" class="error-hint hidden" >Incorrect email format</div>
+	  </div>
+	  <div class="form-group">
+		  <label>Password</label>
+		  <input id="password" placeholder="Enter password"/>
+		  <div id="passerr" class="error-hint hidden" >password length must be 6-9 and must contain a letter and number</div>
+	  </div>
+	  <label id="subs">Choose a subscription plan</label>
+	  <label  name ="op1" class="radio">
+		  <input name="opts" type="radio" id="op1" class="radio__input"> 
+		  <div class="radio__radio"></div>
+		  VIP
+	  </label>
+	  <label  name ="op2" class="radio">
+		  <input name="opts" type="radio" id="op2" class="radio__input"> 
+		  <div class="radio__radio"></div>
+		  Gold
+	  </label>
+	  <label  name ="op3" class="radio">
+		  <input name="opts" type="radio" id="op3" class="radio__input"> 
+		  <div class="radio__radio"></div>
+		  Premium 
+	  </label>
+	  <div id="suberror" class="error-hint hidden" >Please Choose a Plan</div>
+	  <label id="airs">Select air type:</label>
+	  <select>
+		  <option>Triple oxidized</option>
+		  <option>Mint Flavor</option>
+		  <option>Vintage Mountaintop</option>
+	  </select>
+	  <hr />
+	  <div id="btns">
+	  	<button>submit</button>
+	  	<button id="refresh">reset</button>
+	   </div>
+  </form>
+	<div id="con" class="hidden">
+		Thank you for subscribing
+		<span id="confirmationName"></span>
+	</div>
+	<footer>
+  <p>Copyright &copy; 2021 Sky Vial Inc. All rights reserved.</p>
+  <p> <a href="#"> About Us </a> &nbsp;|&nbsp;<a href=#> Return to Top </a> </p>
+</footer>
+	
+	
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/membershipForm.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>

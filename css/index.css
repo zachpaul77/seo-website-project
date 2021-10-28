@@ -23,7 +23,7 @@
 .navbar-custom .nav-item:focus .nav-link,
 .navbar-custom .dropdown-item:hover, 
 .navbar-custom .dropdown-item:focus {
-    background-color: #346f7e;
+    background-color: dimgray;
     color: #fff;
 }
 /* Border and text colors for menu icon on small screens */
