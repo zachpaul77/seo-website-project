@@ -47,11 +47,20 @@ body {
 	font-size: 20px;
 }
 #second {
-	background-color: #35283C;
+	background-color: #433F52;
 }
 #second h1, #second h3 {
 	color: white;
 }
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
 .new {
 	color: red;
 	font-size: 75%;
@@ -93,6 +102,10 @@ footer {
     position: relative;
 }
 
+@media screen and (max-width:768px){
+    .testimonial {display:none}
+}
+
 @media screen and (min-width:0px){
 	.heroimg {
 		padding-top: 1rem;
@@ -104,7 +117,7 @@ footer {
 	h3 {
 		font-size: 20px;
 	}
-	.heroimg img {
+	#first img {
 		width: 60%;
 	}
 	#second img {
@@ -139,12 +152,15 @@ footer {
 	h3 {
 		font-size: 23px;
 	}
-	.heroimg img {
+	#first img {
 		width:30rem;
 	}
 	#second img {
 		width:15rem;
 	}
+	.testimonial img {
+        width: 23rem;
+    }
 	footer {
 		font-size: 110%;
 		padding: 10px 0px;
@@ -172,12 +188,15 @@ footer {
 	h3 {
 		font-size: 23px;
 	}
-	.heroimg img {
+	#first img {
 		width:50rem;
 	}
 	#second img {
 		width:30rem;
 	}
+    .testimonial img {
+        width: auto;
+    }
     .about-message {
         padding-left: 35px;
         text-align: left;
@@ -196,7 +215,7 @@ footer {
 	h1 {
 		font-size: 50px;
 	}
-	.heroimg img {
+	#first img {
 		width:50rem;
 	}
 	#second img {
