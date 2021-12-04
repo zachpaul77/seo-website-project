@@ -93,11 +93,18 @@ footer {
 @media screen and (min-width:370px) and (max-width:680px){
 #subscription {
     max-width: 257px;
-    max-height: 257px;
+    max-height: 255px;
 
 }
-	.heroimg h3{
+#membership {
+    max-width: 260px;
+    max-height: 190px;
+
+}
+.heroimg h3{
 		font-size: 15px;
+		margin-left: 25px;
+		margin-right: 25px;
 	}
 
 }
